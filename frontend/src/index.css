@@ -1,0 +1,11 @@
+
+body{
+  background-color: rgb(240, 240, 240);
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  max-height: 100vh;
+  min-width: 320px;
+}
+@import "tailwindcss";
