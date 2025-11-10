@@ -43,7 +43,7 @@ const Navbar = () => {
             <ResponsiveOpenButton/>
           </button>
           {openButton &&(
-              <div className={`fixed right-0 top-0 ease-in-out transform transition-transform duration-300 flex p-4 flex-col duration-300 items-center list-none gap-10 z-50 h-screen bg-blue-100 ${openButton ? 'translate-x-0': 'translate-x-full'}`}>
+              <div className={`fixed right-0 top-0 ease-in-out transform transition-transform flex p-4 text-white flex-col duration-300 items-center list-none gap-10 z-50 h-screen bg-gray-500`}>
                 <button onClick={openSideBar}>
                   <ResponsiveCloseButton/>
                   {NavItems.map((item =>

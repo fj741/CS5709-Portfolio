@@ -6,13 +6,17 @@ const EducationPage = () => {
     {
       title: "Postgraduate",
       details: ["MSc"]
-    }
+    },
+    {
+      title: "Undergaduate",
+      details: ["BSc"]
+    },
   ]
   return (
     <div className="flex flex-wrap h-[70vh] m-10 gap-10 items-center justify-center">
       {
-      data.map((data) => (
-        <EducationCard key={data.title} title={data.title} details={data.details} />
+        data.map((data) => (
+          <EducationCard key={data.title} title={data.title} details={data.details} />
       ))}
 
       
