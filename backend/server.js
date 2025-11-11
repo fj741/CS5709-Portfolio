@@ -12,12 +12,17 @@ const dotenv = require("dotenv");
 const cors = require('cors');
 const mongoose = require("mongoose");
 
+const blogRoutes = require('./routes/routes');
+
 const app = express();
 
 //Created a dotenv file to hide sensitive information such as PORT and MongoDB connection string
 dotenv.config()
 
 app.use(express.json())
+
+app.use('/api', blogRoutes);
+
 
 const PORT = process.env.PORT;
 

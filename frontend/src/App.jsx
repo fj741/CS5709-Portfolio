@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/HomePage'
 
-import {Routes, Route, BrowserRouter } from 'react-router-dom'
+import {Routes, Route, HashRouter } from 'react-router-dom'
 import AboutPage from './pages/AboutPage'
 import EducationPage from './pages/EducationPage'
 import SkillsPage from './pages/SkillsPage'
@@ -15,7 +15,7 @@ import BlogPage from './pages/BlogPage'
 function App() {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home/>}></Route>
@@ -27,7 +27,7 @@ function App() {
         <Route path="/blog" element={<BlogPage/>}></Route>
       </Routes>
       <Footer></Footer>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
