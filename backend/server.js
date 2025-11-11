@@ -1,41 +1,37 @@
+/**
+ * Basic server file created using NodeJS
+ * Created a database connection using mongoose 
+ * Added dotenv file to hide sensitive information
+ * 
+ */
+
+
 const express = require("express");
 const dotenv = require("dotenv");
-const {Server} = require('socket.io');
-const http = require('http');
+
 const cors = require('cors');
+const mongoose = require("mongoose");
 
 const app = express();
-const PORT = process.env.PORT;
+
+//Created a dotenv file to hide sensitive information such as PORT and MongoDB connection string
+dotenv.config()
+
 app.use(express.json())
 
-const server = http.createServer(app);
-const io = new Server(server, {
-    cors: {
-        origin: 'http://localhost:5137',
-        methods: ['GET', 'POST']
-    }
-})
-io.on('connection', (socket) => {
-  console.log('User connected:', socket.id);
+const PORT = process.env.PORT;
 
-  socket.on('send_message', (data) => {
-    io.emit('receive_message', data);
-  });
-
-  socket.on('disconnect', () => {
-    console.log('User disconnected:', socket.id);
-  });
-});
-
-server.listen(5000, () => {
-  console.log('Server running on http://localhost:3000');
-});
-
-dotenv.config();
+// Connecting to Database
+mongoose.connect(process.env.MONGO_DB_CONNECTION, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}).then(() => console.log('MongoDB Connected'))
+.catch(err => console.error(err));
 
 
-app.listen(3000, () =>{
-    console.log(`Listening on port: 3000`)
+
+app.listen(PORT, () =>{
+    console.log(`Listening on port: ${PORT}`)
 })
 
 
