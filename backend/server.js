@@ -5,33 +5,34 @@
  * 
  */
 
-
 const express = require("express");
 const dotenv = require("dotenv");
 
 const cors = require('cors');
 const mongoose = require("mongoose");
 
-const blogRoutes = require('./routes/routes');
+
+const blogRoutes = require('./routes/blogRoutes');
 
 const app = express();
 
 //Created a dotenv file to hide sensitive information such as PORT and MongoDB connection string
 dotenv.config()
 
-app.use(express.json())
+app.use(cors())
 
-app.use('/api', blogRoutes);
+app.use(express.json());
 
+app.use('/api/blogs', blogRoutes);
 
 const PORT = process.env.PORT;
 
 // Connecting to Database
 mongoose.connect(process.env.MONGO_DB_CONNECTION, {
+  dbName: "test",
   useNewUrlParser: true,
   useUnifiedTopology: true
-}).then(() => console.log('MongoDB Connected'))
-.catch(err => console.error(err));
+}).then(() => console.log('MongoDB Connected')).catch(err => console.error(err));
 
 
 
