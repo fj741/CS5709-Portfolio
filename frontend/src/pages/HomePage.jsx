@@ -1,3 +1,8 @@
+/**
+ * Simple Homepage consisting of two components
+ * When displayed on a smaller device, the Design component is displayed under the Banner
+ */
+
 import Banner from '../components/Banner'
 import Design from '../components/Design'
 

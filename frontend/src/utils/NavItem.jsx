@@ -1,3 +1,8 @@
+/**
+ * Added a NavItem util which takes in a link and a title for each navigation page
+ * Added Proptypes to ensure type safety
+ */
+
 import React from 'react'
 import { Link } from "react-router-dom";
 

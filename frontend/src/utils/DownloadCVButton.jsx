@@ -4,7 +4,7 @@ import React from 'react'
 const DownloadCVButton = () => {
   return (
     <div>
-        <button className='bg-cyan-800 p-4 text-white font-bold'>Download CV</button>
+        <a href="/CV.pdf" download className='bg-cyan-800 p-4 text-white font-bold'>Download CV</a>
     </div>
 
   )

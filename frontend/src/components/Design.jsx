@@ -1,21 +1,22 @@
+
 import React from "react";
 
 const Design= () => {
   const events = [
     {
       year: '2021',
-      title: 'Senior Developer at TechCorp',
-      description: 'Led a team building scalable web apps.',
+      title: 'BsC General Science',
+      description: 'Completed my Bachelor of Science in Maynooth University.',
     },
     {
-      year: '2023',
-      title: 'Frontend Engineer at DevStudio',
-      description: 'Focused on React and UI/UX design.',
+      year: '2024',
+      title: 'Diploma',
+      description: 'Completed a Diploma in Full Stack Software Development in UCD',
     },
     {
-      year: '2021',
-      title: 'Graduated from University of Limerick',
-      description: 'BSc in Computer Science.',
+      year: '2026',
+      title: 'MsC Software Enginnering',
+      description: 'Currently pursuing a Masters in Limerick University',
     },
   ];
 

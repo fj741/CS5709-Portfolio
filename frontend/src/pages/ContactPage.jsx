@@ -2,7 +2,7 @@ import React from 'react'
 import Contact from '../components/Contact'
 const ContactPage = () => {
   return (
-    <div >
+    <div className='h-[70vh]'>
         <Contact/>
     </div>
   )

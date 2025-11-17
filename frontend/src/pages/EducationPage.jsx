@@ -1,15 +1,19 @@
+/**
+ * Education Page that takes in the EducationCard component and provides the user with
+ * details when hovering over an education card
+ */
 import React from 'react'
-import EducationCard from '../utils/EducationCard'
+import EducationCard from '../components/EducationCard'
 
 const EducationPage = () => {
   const data = [
     {
       title: "Postgraduate",
-      details: ["MSc"]
+      details: ["MSc in Software Engineering", "Completing in 2026", "University Limerick"]
     },
     {
       title: "Undergaduate",
-      details: ["BSc"]
+      details: ["BSc is General Science", "Completed in 2021", "Maynooth University"]
     },
   ]
   return (
