@@ -15,7 +15,6 @@ const NavItems = [
   { label: "Contact", path: "/contact" },
   { label: "Messaging", path:"/message"},
   { label: "Blog", path: "/blog"},
-  { label: "Gallery", path: "/gallery"}
 ]
 
 
