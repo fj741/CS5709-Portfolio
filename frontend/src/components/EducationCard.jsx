@@ -14,7 +14,7 @@ const EducationCard = ({title, details}) => {
     </div>
   )
 }
-
+// Used proptypes to ensure type safety during runtime.
 EducationCard.propTypes = {
     title: PropTypes.string.isRequired,
     details: PropTypes.arrayOf(PropTypes.string).isRequired,

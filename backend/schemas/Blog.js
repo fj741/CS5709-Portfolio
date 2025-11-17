@@ -1,3 +1,7 @@
+/**
+ * Created a MongoDB schema
+ * Can insert docuemnts using Postman
+ */
 const mongoose = require("mongoose")
 
 const blogSchema = new mongoose.Schema({

@@ -1,4 +1,8 @@
 
+/**
+ * Showcases my education in a visually appealing way on the homescreen
+ * the events variable makes it easy for extensibility 
+ */
 import React from "react";
 
 const Design= () => {
@@ -19,9 +23,9 @@ const Design= () => {
       description: 'Currently pursuing a Masters in Limerick University',
     },
   ];
-
+  // Maps details of every event. Makes it easier for extensibility. 
   return (
-    <div className="relative border-l-2 border-gray-300 pl-6">
+    <section className="relative border-l-2 border-gray-300 pl-6">
       {events.map((event) => (
         <div key={event} className="mb-10">
           <div className="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full border-4 border-white"></div>
@@ -30,7 +34,7 @@ const Design= () => {
           <p className="text-sm text-gray-500">{event.description}</p>
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 
