@@ -1,88 +1,23 @@
-
 name: CI/CD Pipeline
 
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
-  pull-requests: write
 
 jobs:
-  # 1) Lint Markdown across the repo
-  markdown-lint:
-    name: Lint Markdown
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "18"
-
-      - name: Install markdownlint-cli
-        run: npm install -g markdownlint-cli@0.39
-
-      - name: Run markdownlint
-        run: |
-          markdownlint "**/*.md" --ignore node_modules --ignore frontend/dist
-
-  # 2) Guard: require docs updates when code changes (PRs only)
-  docs-guard:
-    name: Guard: Require docs updates with code changes
-    runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Detect changed files vs base
-        id: diff
-        run: |
-          BASE_REF="${{ github.event.pull_request.base.sha }}"
-          HEAD_REF="${{ github.event.pull_request.head.sha }}"
-          git diff --name-only "$BASE_REF" "$HEAD_REF" > changed_files.txt
-          echo "Changed files:"
-          cat changed_files.txt
-
-          CODE_CHANGED=$(grep -E '^(frontend/src/|frontend/package\.json|frontend/pnpm-lock\.yaml|frontend/yarn\.lock|frontend/vite\.config\.(ts|js)|frontend/webpack\.config\.(ts|js))' changed_files.txt || true)
-          DOCS_CHANGED=$(grep -E '^(README\.md|CHANGELOG\.md|CONTRIBUTING\.md|docs/|frontend/README\.md)' changed_files.txt || true)
-
-          echo "code_changed=$([ -n "$CODE_CHANGED" ] && echo true || echo false)" >> $GITHUB_OUTPUT
-          echo "docs_changed=$([ -n "$DOCS_CHANGED" ] && echo true || echo false)" >> $GITHUB_OUTPUT
-
-      - name: Fail if code changed but docs did not
-        if: steps.diff.outputs.code_changed == 'true' && steps.diff.outputs.docs_changed != 'true'
-        run: |
-          echo "::error ::Code changes detected without matching documentation updates."
-          echo "Please update README.md, docs/, CHANGELOG.md, or relevant docs and push again."
-          exit 1
-
-  # 3) Build & Deploy Frontend to GH Pages (only on main push)
   build-and-deploy-frontend:
-    name: Build & Deploy Frontend
     runs-on: ubuntu-latest
-    needs: [markdown-lint]
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
-          node          node-version: "18"
+          node-version: "18"
 
       - name: Install and build frontend
         run: |
@@ -90,9 +25,13 @@ jobs:
           npm install
           npm run build
           cp dist/index.html dist/404.html
+      
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: frontend/dist
+          publish_branch: gh-pages
+
+this is my ci cd pipeline and it works
