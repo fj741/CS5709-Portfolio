@@ -278,8 +278,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -434,8 +434,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -812,8 +812,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -1076,8 +1076,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -1232,8 +1232,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -1610,8 +1610,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -1874,8 +1874,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -2030,8 +2030,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -2294,8 +2294,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -2450,8 +2450,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -2542,8 +2542,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -2614,8 +2614,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -2690,8 +2690,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -2786,8 +2786,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -2885,8 +2885,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -3002,8 +3002,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -3074,8 +3074,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -3159,8 +3159,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -3239,8 +3239,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -3311,8 +3311,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -3387,8 +3387,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -3483,8 +3483,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -3582,8 +3582,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -3699,8 +3699,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -3771,8 +3771,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -3856,8 +3856,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -3936,8 +3936,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -4008,8 +4008,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -4084,8 +4084,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -4180,8 +4180,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -4279,8 +4279,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -4396,8 +4396,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -4468,8 +4468,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -4553,8 +4553,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -4633,8 +4633,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -4705,8 +4705,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -4781,8 +4781,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -4877,8 +4877,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -4976,8 +4976,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -5093,8 +5093,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -5165,8 +5165,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -5250,8 +5250,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -5330,8 +5330,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
@@ -5407,8 +5407,8 @@
                     "definition_context_file_path": null,
                     "triggers": [
                         [
-                            "push",
-                            "pull_request"
+                            "pull_request",
+                            "push"
                         ]
                     ],
                     "job": [
